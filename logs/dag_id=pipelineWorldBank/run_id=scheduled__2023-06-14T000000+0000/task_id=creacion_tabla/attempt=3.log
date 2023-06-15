@@ -1,0 +1,32 @@
+[2023-06-15T14:10:41.707+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipelineWorldBank.creacion_tabla scheduled__2023-06-14T00:00:00+00:00 [queued]>
+[2023-06-15T14:10:41.725+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipelineWorldBank.creacion_tabla scheduled__2023-06-14T00:00:00+00:00 [queued]>
+[2023-06-15T14:10:41.726+0000] {taskinstance.py:1308} INFO - Starting attempt 3 of 3
+[2023-06-15T14:10:41.758+0000] {taskinstance.py:1327} INFO - Executing <Task(PostgresOperator): creacion_tabla> on 2023-06-14 00:00:00+00:00
+[2023-06-15T14:10:41.765+0000] {standard_task_runner.py:57} INFO - Started process 222 to run task
+[2023-06-15T14:10:41.768+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'pipelineWorldBank', 'creacion_tabla', 'scheduled__2023-06-14T00:00:00+00:00', '--job-id', '91', '--raw', '--subdir', 'DAGS_FOLDER/pipelineWorldBank.py', '--cfg-path', '/tmp/tmppea9pja0']
+[2023-06-15T14:10:41.769+0000] {standard_task_runner.py:85} INFO - Job 91: Subtask creacion_tabla
+[2023-06-15T14:10:41.833+0000] {task_command.py:410} INFO - Running <TaskInstance: pipelineWorldBank.creacion_tabla scheduled__2023-06-14T00:00:00+00:00 [running]> on host b41452b45446
+[2023-06-15T14:10:41.977+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipelineWorldBank' AIRFLOW_CTX_TASK_ID='creacion_tabla' AIRFLOW_CTX_EXECUTION_DATE='2023-06-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-06-14T00:00:00+00:00'
+[2023-06-15T14:10:41.978+0000] {sql.py:262} INFO - Executing: 
+            CREATE TABLE IF NOT EXISTS datos (
+                id VARCHAR,
+                country VARCHAR, 
+                iso3code VARCHAR,
+                date VARCHAR,
+                population VARCHAR
+            )
+        
+[2023-06-15T14:10:41.993+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-15T14:10:42.085+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-15T14:10:42.104+0000] {sql.py:375} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS datos (
+                id VARCHAR,
+                country VARCHAR, 
+                iso3code VARCHAR,
+                date VARCHAR,
+                population VARCHAR
+            )
+        , parameters: None
+[2023-06-15T14:10:42.129+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=pipelineWorldBank, task_id=creacion_tabla, execution_date=20230614T000000, start_date=20230615T141041, end_date=20230615T141042
+[2023-06-15T14:10:42.181+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-15T14:10:42.225+0000] {taskinstance.py:2651} INFO - 1 downstream tasks scheduled from follow-on schedule check

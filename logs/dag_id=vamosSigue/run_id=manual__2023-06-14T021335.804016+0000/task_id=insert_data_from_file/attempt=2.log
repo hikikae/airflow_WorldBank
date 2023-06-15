@@ -1,0 +1,263 @@
+[2023-06-14T02:30:07.008+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: vamosSigue.insert_data_from_file manual__2023-06-14T02:13:35.804016+00:00 [queued]>
+[2023-06-14T02:30:07.026+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: vamosSigue.insert_data_from_file manual__2023-06-14T02:13:35.804016+00:00 [queued]>
+[2023-06-14T02:30:07.027+0000] {taskinstance.py:1308} INFO - Starting attempt 2 of 2
+[2023-06-14T02:30:07.050+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): insert_data_from_file> on 2023-06-14 02:13:35.804016+00:00
+[2023-06-14T02:30:07.058+0000] {standard_task_runner.py:57} INFO - Started process 85 to run task
+[2023-06-14T02:30:07.062+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'vamosSigue', 'insert_data_from_file', 'manual__2023-06-14T02:13:35.804016+00:00', '--job-id', '68', '--raw', '--subdir', 'DAGS_FOLDER/dbeaverFunciona.py', '--cfg-path', '/tmp/tmptrcpecn1']
+[2023-06-14T02:30:07.063+0000] {standard_task_runner.py:85} INFO - Job 68: Subtask insert_data_from_file
+[2023-06-14T02:30:07.128+0000] {task_command.py:410} INFO - Running <TaskInstance: vamosSigue.insert_data_from_file manual__2023-06-14T02:13:35.804016+00:00 [running]> on host b41452b45446
+[2023-06-14T02:30:07.262+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='vamosSigue' AIRFLOW_CTX_TASK_ID='insert_data_from_file' AIRFLOW_CTX_EXECUTION_DATE='2023-06-14T02:13:35.804016+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-14T02:13:35.804016+00:00'
+[2023-06-14T02:30:07.266+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:07.279+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:07.407+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:07.427+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:07.434+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:07.443+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:07.452+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:07.556+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:07.582+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:07.592+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:07.599+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:07.612+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:07.729+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:07.750+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:07.758+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:07.765+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:07.775+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:07.881+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:07.899+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:07.906+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:07.912+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:07.921+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:08.002+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:08.022+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:08.030+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:08.037+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:08.047+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:08.128+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:08.147+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:08.154+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:08.160+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:08.170+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:08.267+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:08.287+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:08.294+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:08.300+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:08.310+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:08.394+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:08.414+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:08.422+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:08.430+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:08.443+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:08.553+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:08.576+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:08.583+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:08.589+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:08.599+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:08.699+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:08.718+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:08.726+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:08.731+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:08.740+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:08.836+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:08.857+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:08.864+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:08.870+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:08.880+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:08.956+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:08.974+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:08.981+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:08.986+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:08.997+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:09.076+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:09.094+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:09.101+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:09.107+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:09.121+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:09.228+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:09.254+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:09.263+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:09.269+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:09.280+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:09.377+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:09.395+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:09.401+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:09.407+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:09.416+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:09.486+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:09.504+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:09.511+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:09.517+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:09.526+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:09.599+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:09.617+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:09.624+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:09.630+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:09.639+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:09.719+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:09.737+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:09.744+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:09.750+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:09.760+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:09.837+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:09.858+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:09.865+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:09.872+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:09.882+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:10.004+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:10.025+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:10.032+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:10.038+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:10.049+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:10.136+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:10.154+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:10.162+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:10.168+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:10.178+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:10.261+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:10.279+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:10.285+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:10.292+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:10.300+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:10.378+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:10.398+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:10.404+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:10.410+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:10.419+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:10.497+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:10.515+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:10.521+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:10.527+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:10.537+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:10.611+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:10.630+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:10.636+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:10.642+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:10.653+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:10.734+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:10.755+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:10.768+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:10.776+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:10.789+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:10.875+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:10.893+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:10.900+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:10.905+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:10.914+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:10.989+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:11.010+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:11.018+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:11.025+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:11.034+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:11.119+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:11.137+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:11.144+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:11.150+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:11.159+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:11.238+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:11.255+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:11.264+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:11.269+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:11.279+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:11.362+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:11.380+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:11.387+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:11.393+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:11.402+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:11.473+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:11.492+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:11.498+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:11.504+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:11.513+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:11.612+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:11.636+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:11.647+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:11.654+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:11.666+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:11.754+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:11.772+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:11.779+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:11.785+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:11.795+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:11.870+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:11.888+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:11.896+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:11.902+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:11.911+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:11.982+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:11.999+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:12.005+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:12.011+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:12.020+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:12.092+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:12.112+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:12.120+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:12.127+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:12.138+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:12.216+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:12.234+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:12.241+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:12.247+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:12.256+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:12.343+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:12.366+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:12.374+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:12.380+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:12.391+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:12.504+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:12.523+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:12.530+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:12.535+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:12.546+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:12.624+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:12.643+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:12.650+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:12.657+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:12.666+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:12.738+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:12.758+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:12.765+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:12.770+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:12.782+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:12.877+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:12.896+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:12.903+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:12.909+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:12.917+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:12.997+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:13.014+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:13.021+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:13.026+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:13.034+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:13.108+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:13.126+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:13.133+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:13.138+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:13.147+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:13.231+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:13.250+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:13.257+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:13.263+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:13.272+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:13.356+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:13.377+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:13.384+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:13.391+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:13.400+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:13.471+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:13.489+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:13.495+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:13.501+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:13.510+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:13.580+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:13.598+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:13.605+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:13.611+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:30:13.620+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:13.700+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:13.718+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:30:13.725+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-14T02:30:13.732+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-06-14T02:30:13.748+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=vamosSigue, task_id=insert_data_from_file, execution_date=20230614T021335, start_date=20230614T023007, end_date=20230614T023013
+[2023-06-14T02:30:13.793+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-14T02:30:13.817+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,38 @@
+[2023-06-14T02:31:36.861+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: vamosSigue.insert_data_from_file manual__2023-06-14T02:13:35.804016+00:00 [queued]>
+[2023-06-14T02:31:36.879+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: vamosSigue.insert_data_from_file manual__2023-06-14T02:13:35.804016+00:00 [queued]>
+[2023-06-14T02:31:36.880+0000] {taskinstance.py:1308} INFO - Starting attempt 4 of 4
+[2023-06-14T02:31:36.907+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): insert_data_from_file> on 2023-06-14 02:13:35.804016+00:00
+[2023-06-14T02:31:36.914+0000] {standard_task_runner.py:57} INFO - Started process 123 to run task
+[2023-06-14T02:31:36.918+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'vamosSigue', 'insert_data_from_file', 'manual__2023-06-14T02:13:35.804016+00:00', '--job-id', '73', '--raw', '--subdir', 'DAGS_FOLDER/dbeaverFunciona.py', '--cfg-path', '/tmp/tmp586_3bco']
+[2023-06-14T02:31:36.919+0000] {standard_task_runner.py:85} INFO - Job 73: Subtask insert_data_from_file
+[2023-06-14T02:31:36.990+0000] {task_command.py:410} INFO - Running <TaskInstance: vamosSigue.insert_data_from_file manual__2023-06-14T02:13:35.804016+00:00 [running]> on host b41452b45446
+[2023-06-14T02:31:37.134+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='vamosSigue' AIRFLOW_CTX_TASK_ID='insert_data_from_file' AIRFLOW_CTX_EXECUTION_DATE='2023-06-14T02:13:35.804016+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-14T02:13:35.804016+00:00'
+[2023-06-14T02:31:37.140+0000] {sql.py:262} INFO - Executing: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern')
+[2023-06-14T02:31:37.154+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:31:37.269+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:31:37.290+0000] {sql.py:375} INFO - Running statement: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Eastern and Southern'), parameters: None
+[2023-06-14T02:31:37.299+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dbeaverFunciona.py", line 25, in insert_data_from_file
+    ).execute(context={})
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 274, in execute
+    **extra_kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/hooks/sql.py", line 349, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/hooks/sql.py", line 380, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.UndefinedTable: relation "datos" does not exist
+LINE 1: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Easter...
+                    ^
+
+[2023-06-14T02:31:37.323+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=vamosSigue, task_id=insert_data_from_file, execution_date=20230614T021335, start_date=20230614T023136, end_date=20230614T023137
+[2023-06-14T02:31:37.346+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 73 for task insert_data_from_file (relation "datos" does not exist
+LINE 1: INSERT INTO datos (id, country) VALUES ('ZH', 'Africa Easter...
+                    ^
+; 123)
+[2023-06-14T02:31:37.371+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-14T02:31:37.398+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

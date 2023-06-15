@@ -1,0 +1,42 @@
+[2023-06-13T03:20:44.723+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: vamosSigue.creacion_tabla scheduled__2023-06-12T00:00:00+00:00 [queued]>
+[2023-06-13T03:20:44.741+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: vamosSigue.creacion_tabla scheduled__2023-06-12T00:00:00+00:00 [queued]>
+[2023-06-13T03:20:44.742+0000] {taskinstance.py:1308} INFO - Starting attempt 2 of 2
+[2023-06-13T03:20:44.772+0000] {taskinstance.py:1327} INFO - Executing <Task(PostgresOperator): creacion_tabla> on 2023-06-12 00:00:00+00:00
+[2023-06-13T03:20:44.779+0000] {standard_task_runner.py:57} INFO - Started process 532 to run task
+[2023-06-13T03:20:44.783+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'vamosSigue', 'creacion_tabla', 'scheduled__2023-06-12T00:00:00+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/dbeaverFunciona.py', '--cfg-path', '/tmp/tmpsyzx0w1f']
+[2023-06-13T03:20:44.784+0000] {standard_task_runner.py:85} INFO - Job 44: Subtask creacion_tabla
+[2023-06-13T03:20:44.858+0000] {task_command.py:410} INFO - Running <TaskInstance: vamosSigue.creacion_tabla scheduled__2023-06-12T00:00:00+00:00 [running]> on host a26553e1bb12
+[2023-06-13T03:20:44.978+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='vamosSigue' AIRFLOW_CTX_TASK_ID='creacion_tabla' AIRFLOW_CTX_EXECUTION_DATE='2023-06-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-06-12T00:00:00+00:00'
+[2023-06-13T03:20:44.979+0000] {sql.py:262} INFO - Executing: 
+            CREATE TABLE IF NOT EXISTS datos (
+            id VARCHAR NOT NULL,
+            country VARCHAR NOT NULL,
+            );
+          
+[2023-06-13T03:20:44.995+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-13T03:20:45.130+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-13T03:20:45.151+0000] {sql.py:375} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS datos (
+            id VARCHAR NOT NULL,
+            country VARCHAR NOT NULL,
+            );
+          , parameters: None
+[2023-06-13T03:20:45.160+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 274, in execute
+    **extra_kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/hooks/sql.py", line 349, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/hooks/sql.py", line 380, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.SyntaxError: syntax error at or near ")"
+LINE 5:             );
+                    ^
+
+[2023-06-13T03:20:45.178+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=vamosSigue, task_id=creacion_tabla, execution_date=20230612T000000, start_date=20230613T032044, end_date=20230613T032045
+[2023-06-13T03:20:45.203+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 44 for task creacion_tabla (syntax error at or near ")"
+LINE 5:             );
+                    ^
+; 532)
+[2023-06-13T03:20:45.237+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-13T03:20:45.275+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

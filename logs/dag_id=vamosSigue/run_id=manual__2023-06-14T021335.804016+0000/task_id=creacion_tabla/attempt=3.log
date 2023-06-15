@@ -1,0 +1,26 @@
+[2023-06-14T02:30:41.043+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: vamosSigue.creacion_tabla manual__2023-06-14T02:13:35.804016+00:00 [queued]>
+[2023-06-14T02:30:41.060+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: vamosSigue.creacion_tabla manual__2023-06-14T02:13:35.804016+00:00 [queued]>
+[2023-06-14T02:30:41.061+0000] {taskinstance.py:1308} INFO - Starting attempt 3 of 3
+[2023-06-14T02:30:41.085+0000] {taskinstance.py:1327} INFO - Executing <Task(PostgresOperator): creacion_tabla> on 2023-06-14 02:13:35.804016+00:00
+[2023-06-14T02:30:41.093+0000] {standard_task_runner.py:57} INFO - Started process 99 to run task
+[2023-06-14T02:30:41.098+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'vamosSigue', 'creacion_tabla', 'manual__2023-06-14T02:13:35.804016+00:00', '--job-id', '70', '--raw', '--subdir', 'DAGS_FOLDER/dbeaverFunciona.py', '--cfg-path', '/tmp/tmp4uogldf5']
+[2023-06-14T02:30:41.099+0000] {standard_task_runner.py:85} INFO - Job 70: Subtask creacion_tabla
+[2023-06-14T02:30:41.165+0000] {task_command.py:410} INFO - Running <TaskInstance: vamosSigue.creacion_tabla manual__2023-06-14T02:13:35.804016+00:00 [running]> on host b41452b45446
+[2023-06-14T02:30:41.296+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='vamosSigue' AIRFLOW_CTX_TASK_ID='creacion_tabla' AIRFLOW_CTX_EXECUTION_DATE='2023-06-14T02:13:35.804016+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-14T02:13:35.804016+00:00'
+[2023-06-14T02:30:41.297+0000] {sql.py:262} INFO - Executing: 
+            CREATE TABLE IF NOT EXISTS datos (
+                id VARCHAR NOT NULL,
+                country VARCHAR NOT NULL
+            )
+        
+[2023-06-14T02:30:41.310+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:41.407+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-14T02:30:41.426+0000] {sql.py:375} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS datos (
+                id VARCHAR NOT NULL,
+                country VARCHAR NOT NULL
+            )
+        , parameters: None
+[2023-06-14T02:30:41.452+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=vamosSigue, task_id=creacion_tabla, execution_date=20230614T021335, start_date=20230614T023041, end_date=20230614T023041
+[2023-06-14T02:30:41.511+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-14T02:30:41.548+0000] {taskinstance.py:2651} INFO - 1 downstream tasks scheduled from follow-on schedule check

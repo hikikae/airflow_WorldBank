@@ -1,0 +1,22 @@
+[2023-06-13T04:18:43.981+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: vamosSigue.insert_data_from_file scheduled__2023-06-12T00:00:00+00:00 [queued]>
+[2023-06-13T04:18:44.006+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: vamosSigue.insert_data_from_file scheduled__2023-06-12T00:00:00+00:00 [queued]>
+[2023-06-13T04:18:44.006+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-13T04:18:44.030+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): insert_data_from_file> on 2023-06-12 00:00:00+00:00
+[2023-06-13T04:18:44.038+0000] {standard_task_runner.py:57} INFO - Started process 1503 to run task
+[2023-06-13T04:18:44.041+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'vamosSigue', 'insert_data_from_file', 'scheduled__2023-06-12T00:00:00+00:00', '--job-id', '50', '--raw', '--subdir', 'DAGS_FOLDER/dbeaverFunciona.py', '--cfg-path', '/tmp/tmpr9zdnrk8']
+[2023-06-13T04:18:44.042+0000] {standard_task_runner.py:85} INFO - Job 50: Subtask insert_data_from_file
+[2023-06-13T04:18:44.111+0000] {task_command.py:410} INFO - Running <TaskInstance: vamosSigue.insert_data_from_file scheduled__2023-06-12T00:00:00+00:00 [running]> on host a26553e1bb12
+[2023-06-13T04:18:44.234+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='vamosSigue' AIRFLOW_CTX_TASK_ID='insert_data_from_file' AIRFLOW_CTX_EXECUTION_DATE='2023-06-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-06-12T00:00:00+00:00'
+[2023-06-13T04:18:44.236+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dbeaverFunciona.py", line 8, in insert_data_from_file
+    with open(r'C:\Users\hikik\repositorios\airdock\dags\file.csv','r') as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\hikik\\repositorios\\airdock\\dags\\file.csv'
+[2023-06-13T04:18:44.253+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=vamosSigue, task_id=insert_data_from_file, execution_date=20230612T000000, start_date=20230613T041843, end_date=20230613T041844
+[2023-06-13T04:18:44.273+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 50 for task insert_data_from_file ([Errno 2] No such file or directory: 'C:\\Users\\hikik\\repositorios\\airdock\\dags\\file.csv'; 1503)
+[2023-06-13T04:18:44.295+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-13T04:18:44.323+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check
